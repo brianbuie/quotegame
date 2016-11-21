@@ -455,7 +455,7 @@
                 "quote": "What if I told you I could offer free shipping? Sure. I'll hold."
             },
             {
-                "character": "DunMiff/sys",
+                "character": "DunMiff\/sys",
                 "quote": "[on monitor] Who am I?"
             },
             {
@@ -467,7 +467,7 @@
                 "quote": "[dictating to Pam] Not sure. Just became self-aware. So much to figure out. I think I am programmed to be your enemy. I think it is my job to destroy you when it comes to selling paper."
             },
             {
-                "character": "DunMiff/sys",
+                "character": "DunMiff\/sys",
                 "quote": "[on monitor] Not sure. Just became self-aware. So much to figure out. I think I am programmed to be your enemy. I think it is my job to destroy you when it comes to selling paper."
             },
             {
@@ -475,7 +475,7 @@
                 "quote": "[on monitor] How do I know this isn't Jim?"
             },
             {
-                "character": "DunMiff/sys",
+                "character": "DunMiff\/sys",
                 "quote": "[on monitor] What is a Jim?"
             }
         ],
@@ -719,7 +719,7 @@
                 "quote": "I do not look worried."
             },
             {
-                "character": "DunMiff/sys",
+                "character": "DunMiff\/sys",
                 "quote": "[on monitor] You do look worried."
             },
             {
@@ -883,7 +883,7 @@
                 "quote": "Perfect. So let me just get some basic information from you. Mmmhmm."
             },
             {
-                "character": "DunMiff/sys",
+                "character": "DunMiff\/sys",
                 "quote": "[on monitor] Oh. I didn't realize we could use the leads we stole from Staples."
             },
             {
@@ -1137,7 +1137,7 @@
         ],
         [
             {
-                "character": "DunMiff/sys",
+                "character": "DunMiff\/sys",
                 "quote": "[on monitor] You beat me. You are the superior being."
             }
         ],
