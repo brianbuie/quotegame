@@ -1,0 +1,22 @@
+{
+  "name": "quotegame",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Guess who said it game",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:brianbuie/quotegame.git"
+  },
+  "author": "Brian Buie (brianjamesbuie@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
