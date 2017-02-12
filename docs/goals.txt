@@ -1,0 +1,16 @@
+Stack
+	Node
+	Express
+	MongoDB
+	React
+
+Main
+	a random quote on the screen and the user tries to guess who said it.
+
+Secondary
+	system for pulling random scenes from the database for admin (or possibly user)
+	to pick one of the quotes to be used in the pool of quotes for main game.
+
+Optional
+	rating system for quotes (stars, likes, 'too hard!')
+	user accounts and scoreboards
