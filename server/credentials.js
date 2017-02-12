@@ -1,0 +1,1 @@
+module.exports = { cookieSecret: 'bears beets battlestar galactica' };
