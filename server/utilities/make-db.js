@@ -1,15 +1,8 @@
 var path = require('path');
-var jsonPath = path.resolve(__dirname, '../models/data/theoffice/json/');
 var mongoose = require('mongoose');
-var quoteSchema = new mongoose.Schema({
-	season: Number,
-	episode: Number,
-	scene: Number,
-	line: Number,
-	character: String,
-	quote: String
-});
-var Quotes = mongoose.model('Quotes', quoteSchema);
+// quotes model
+var Quotes = require('../models/theoffice/quotes.js');
+var jsonPath = path.resolve(__dirname, '../models/theoffice/data/');
 mongoose.connect('mongodb://localhost/office', {
 	server: {
 		socketOptions: {
@@ -67,7 +60,7 @@ function createEntries(){
 					episode: episode.episode,
 					scene: sceneKey + 1,
 					line: lineKey + 1,
-					character: line.character,
+					character: line.character.toLowerCase(),
 					quote: line.quote
 				});
 			});
