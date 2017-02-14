@@ -1,3 +1,5 @@
+var path = require('path');
+var jsonPath = path.resolve(__dirname, '../models/data/theoffice/json/');
 var mongoose = require('mongoose');
 var quoteSchema = new mongoose.Schema({
 	season: Number,
@@ -18,6 +20,10 @@ mongoose.connect('mongodb://localhost/office', {
 });
 mongoose.connection.once('open', function(){
 	console.log('connected to database');
+	mongoose.connection.db.dropCollection('quotes', function(err, res){
+		if(err) { console.log('could not drop collection \'quotes\', it may not exist yet'); }
+		else { console.log('dropped collection \'quotes\' before rebuilding'); }
+	});
 	createEntries();
 })
 
@@ -53,18 +59,17 @@ function nextEpisode(episode){
 function createEntries(){
 	var allQuotes = [];
 	generateEpisodeNames().forEach(episodeName => {
-		let episode = require('./json/' + episodeName + '.pretty.json');
+		let episode = require(jsonPath + '/' + episodeName + '.pretty.json');
 		episode.scenes.forEach((scene, sceneKey) => {
 			scene.forEach((line, lineKey) => {
-				let newQuote = {
+				allQuotes.push({
 					season: episode.season,
 					episode: episode.episode,
 					scene: sceneKey + 1,
 					line: lineKey + 1,
 					character: line.character,
 					quote: line.quote
-				};
-				allQuotes.push(newQuote);
+				});
 			});
 		});
 	});
